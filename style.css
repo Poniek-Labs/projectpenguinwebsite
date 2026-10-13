@@ -1,12 +1,12 @@
-/* Custom Variable Setup - Maple Leaf Tech Theme */
+/* Custom Variable Setup - Canadian Red, Maple Orange & Crisp White Tech */
 :root {
-    --bg-dark: #120909;        /* Deep, almost-black maple wood */
-    --bg-card: #221212;        /* Rich, warm charcoal mahogany */
-    --text-main: #fdfaf6;      /* Clean, off-white snow */
-    --text-muted: #bda3a3;    /* Soft autumn frost */
-    --accent-maple: #e73d32;   /* Vibrant Canadian crimson */
-    --accent-gold: #f59e0b;    /* Autumn leaf amber code accents */
-    --accent-glow: rgba(231, 61, 50, 0.15);
+    --bg-dark: #0d0202;         /* Pitch black with a hint of warm undertone */
+    --bg-card: #1c0e0d;         /* Deep rich charcoal with an autumn warmth */
+    --text-white: #ffffff;      /* Stark, clean Canadian snow white */
+    --text-muted: #dcd1d0;      /* High-visibility silver-grey */
+    --canadian-red: #da291c;    /* Official vibrant Canadian Red */
+    --maple-orange: #ff7a00;    /* Bright, fiery autumn maple leaf orange */
+    --accent-glow: rgba(218, 41, 28, 0.2);
 }
 
 /* Base Adjustments */
@@ -23,13 +23,13 @@ html {
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg-dark);
-    color: var(--text-main);
+    color: var(--text-white);
     line-height: 1.6;
 }
 
 /* Header & Navigation */
 header {
-    background-color: rgba(18, 9, 9, 0.85);
+    background-color: rgba(13, 2, 2, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     position: fixed;
@@ -40,18 +40,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 8%;
-    border-bottom: 1px solid rgba(231, 61, 50, 0.1);
+    border-bottom: 1px solid rgba(255, 122, 0, 0.15);
 }
 
 .logo {
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 0.5px;
-    color: var(--text-main);
+    color: var(--text-white);
 }
 
 .logo span {
-    color: var(--accent-maple);
+    color: var(--canadian-red);
     font-weight: 400;
 }
 
@@ -70,18 +70,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--accent-gold);
+    color: var(--maple-orange);
 }
 
-/* Modern Canadian-Tech Hero Layout */
+/* Modern Patriotic Tech Hero Layout */
 .hero {
     position: relative;
     min-height: 85vh;
     display: flex;
     align-items: center;
     padding: 0 8%;
-    /* Gradient shifts from a deep crimson core to a dark wood backdrop */
-    background: radial-gradient(circle at 80% 20%, #4c110e 0%, var(--bg-dark) 60%);
+    /* Striking gradient shifting from vivid Canadian Red down to rich obsidian */
+    background: radial-gradient(circle at 80% 25%, #660d07 0%, var(--bg-dark) 65%);
     overflow: hidden;
 }
 
@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 
 .tagline {
-    color: var(--accent-gold);
+    color: var(--maple-orange);
     text-transform: uppercase;
     font-size: 0.85rem;
     font-weight: 700;
@@ -107,6 +107,7 @@ nav ul li a:hover {
     font-weight: 800;
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
+    color: var(--text-white);
 }
 
 .hero p {
@@ -115,10 +116,11 @@ nav ul li a:hover {
     margin-bottom: 2.5rem;
 }
 
+/* Vibrant Action Button */
 .btn {
     display: inline-block;
-    background-color: var(--accent-maple);
-    color: var(--text-main);
+    background-color: var(--canadian-red);
+    color: var(--text-white);
     padding: 0.8rem 2rem;
     text-decoration: none;
     border-radius: 6px;
@@ -129,14 +131,14 @@ nav ul li a:hover {
 
 .btn:hover {
     transform: translateY(-2px);
-    background-color: #f44336;
-    box-shadow: 0 6px 24px rgba(231, 61, 50, 0.3);
+    background-color: #ff3324;
+    box-shadow: 0 6px 24px rgba(218, 41, 28, 0.4);
 }
 
 /* Feature Grid Container */
 .metrics-section {
     padding: 6rem 8%;
-    background-color: #0b0505; /* Slightly deeper cut into the dark backdrop */
+    background-color: #050101;
 }
 
 .container {
@@ -148,7 +150,7 @@ nav ul li a:hover {
     font-size: 2.25rem;
     text-align: center;
     margin-bottom: 0.5rem;
-    color: var(--text-main);
+    color: var(--text-white);
 }
 
 .section-subtitle {
@@ -164,24 +166,24 @@ nav ul li a:hover {
     gap: 2rem;
 }
 
-/* Autumn Feature Cards */
+/* Feature Cards with Vivid Orange Accents */
 .card {
     background-color: var(--bg-card);
     padding: 2.5rem;
     border-radius: 12px;
-    border: 1px solid rgba(231, 61, 50, 0.05);
+    border: 1px solid rgba(218, 41, 28, 0.1);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: rgba(245, 158, 11, 0.3); /* Lights up gold on hover */
+    border-color: var(--maple-orange); /* Lights up vivid maple orange on hover */
 }
 
 .card h3 {
     font-size: 1.35rem;
     margin-bottom: 1rem;
-    color: var(--accent-gold);
+    color: var(--maple-orange);
 }
 
 .card p {
@@ -195,7 +197,7 @@ footer {
     padding: 3rem 2rem;
     color: var(--text-muted);
     font-size: 0.85rem;
-    border-top: 1px solid rgba(231, 61, 50, 0.05);
+    border-top: 1px solid rgba(255, 122, 0, 0.15);
 }
 
 /* Mobile Adaptations */
